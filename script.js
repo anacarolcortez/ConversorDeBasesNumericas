@@ -1,4 +1,3 @@
-//falta habilitar operação com teclado virtual
 const inputDecimal = document.getElementById('dec');
 const inputHexadecimal = document.getElementById('hex');
 const inputBinario = document.getElementById('bin');
@@ -29,7 +28,7 @@ function cDecimalHexadecimal(num) {
     const vetorHexadecimais = [];
 
     while (num > 16) {
-        let resp = num%16;       
+        let resp = (num%16);               
         vetorHexadecimais.push(resp);
         num = Math.floor(num/16);
     }
@@ -50,16 +49,35 @@ inputHexadecimal.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
         numero = this.value;
         cHexadecimalDecimal(numero);
-        cHexadecimalBinario(numero);
     }
 })
 
 function cHexadecimalDecimal(numero) {
-    console.log(numero);
-}
+    const baseDezesseis = [];
 
-function cHexadecimalBinario(numero) {
-    console.log(numero);
+    const vetorNumero = numero.split('');
+
+    const vNumero = vetorNumero.reverse();
+
+    let hexa = vNumero.map(function(digito) { return digito == 'A' || digito == 'a' ? 10 : digito; })
+    .map(function(digito) { return digito == 'B' || digito == 'b' ? 11 : digito; })
+    .map(function(digito) { return digito == 'C' || digito == 'c' ? 12 : digito; })
+    .map(function(digito) { return digito == 'D' || digito == 'd' ? 13 : digito; })
+    .map(function(digito) { return digito == 'E' || digito == 'e' ? 14 : digito; })
+    .map(function(digito) { return digito == 'F' || digito == 'f' ? 15 : digito; });
+
+    for (x = 0; x < hexa.length; x++) {
+        baseDezesseis[x] = Math.pow(16, x);
+        baseDezesseis[x] = baseDezesseis[x] * hexa[x];
+    } 
+ 
+    const somatorio  = baseDezesseis.reduce(function(sum, next){
+        return sum + next;
+    });
+
+    inputDecimal.value = somatorio;  
+    
+    cDecimalBinario(somatorio);
 }
 
 inputBinario.addEventListener("keydown", function(event) {
