@@ -41,7 +41,7 @@ two.addEventListener('click', () => {
         inputHexadecimal.value += 2;
     };
     if (click == 3){
-        inputBinario.value += 2;
+        alert("Digite apenas 0 e 1 para binários");
     };
 })
 
@@ -53,7 +53,7 @@ three.addEventListener('click', () => {
         inputHexadecimal.value += 3;
     };
     if (click == 3){
-        inputBinario.value += 3;
+        alert("Digite apenas 0 e 1 para binários");
     };
 })
 
@@ -65,7 +65,7 @@ four.addEventListener('click', () => {
         inputHexadecimal.value += 4;
     };
     if (click == 3){
-        inputBinario.value += 4;
+        alert("Digite apenas 0 e 1 para binários");
     };
 })
 
@@ -77,7 +77,7 @@ five.addEventListener('click', () => {
         inputHexadecimal.value += 5;
     };
     if (click == 3){
-        inputBinario.value += 5;
+        alert("Digite apenas 0 e 1 para binários");
     };
 })
 
@@ -89,7 +89,7 @@ six.addEventListener('click', () => {
         inputHexadecimal.value += 6;
     };
     if (click == 3){
-        inputBinario.value += 6;
+        alert("Digite apenas 0 e 1 para binários");
     };
 })
 
@@ -101,7 +101,7 @@ seven.addEventListener('click', () => {
         inputHexadecimal.value += 7;
     };
     if (click == 3){
-        inputBinario.value += 7;
+        alert("Digite apenas 0 e 1 para binários");
     };
 })
 
@@ -113,7 +113,7 @@ eight.addEventListener('click', () => {
         inputHexadecimal.value += 8;
     };
     if (click == 3){
-        inputBinario.value += 8;
+        alert("Digite apenas 0 e 1 para binários");
     };
 })
 
@@ -125,7 +125,7 @@ nine.addEventListener('click', () => {
         inputHexadecimal.value += 9;
     };
     if (click == 3){
-        inputBinario.value += 9;
+        alert("Digite apenas 0 e 1 para binários");
     };
 })
 
