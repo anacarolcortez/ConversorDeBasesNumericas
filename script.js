@@ -2,7 +2,6 @@
 const inputDecimal = document.getElementById('dec');
 const inputHexadecimal = document.getElementById('hex');
 const inputBinario = document.getElementById('bin');
-const vetorDecimais = [];
 
 inputDecimal.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
@@ -71,7 +70,26 @@ inputBinario.addEventListener("keydown", function(event) {
 })
 
 function cBinarioDecimal(numero) {
-    console.log(numero);
+    const vetorDecimais = [];
+    const baseDois = [];
+
+    const vetorNumero = Array.from(String(numero), Number);
+
+    vetorNumero.map(function(n) { return n == 1 || n == 0 ? n : location.reload()})
+
+    const vNumero = vetorNumero.reverse();
+
+    for (x = 0; x < vNumero.length; x++) {
+        baseDois[x] = Math.pow(2, x);
+        if (vNumero[x] !== 0){
+            vetorDecimais.push(baseDois[x]);
+        }
+    }
+
+    inputDecimal.value  = vetorDecimais.reduce(function(sum, next){
+        return sum + next;
+    });
+
 }
 
 function cBinarioHexadecimal(numero) {
