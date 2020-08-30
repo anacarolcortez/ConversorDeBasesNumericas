@@ -8,5 +8,4 @@ Layout responsivo (com grid e flex no CSS): botões funcionam, exceto pelo "=", 
 O que está em desenvolvimento: método de conversão de hexadecimal para decimal e binário;
 <br/>
 ![Calculadora](https://github.com/anacarolcortez/ConversorDeBasesNumericas/blob/master/Calculadora.png)
-<br/>
 ![Calculadora_mobile](https://github.com/anacarolcortez/ConversorDeBasesNumericas/blob/master/Calculadora_mobile.png)
