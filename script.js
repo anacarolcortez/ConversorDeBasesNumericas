@@ -60,7 +60,7 @@ function cHexadecimalDecimal(numero) {
     const vNumero = vetorNumero.reverse();
     
     for (i = 0; i < vNumero.length; i++){
-        if (numero.match(/[a-z]/i)){
+        if (numero.match(/[g-z]/i)){
             return alert("Digite um caracter válido");
         }
     }
