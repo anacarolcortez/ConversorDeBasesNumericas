@@ -1,0 +1,148 @@
+body {
+    font-family: 'Russo One', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    background-color: #E0E0E0;
+    width: 30%;
+    height: 45%;
+    display: flex;
+    margin: auto;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+	grid-template-rows: auto auto;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-left: 3%;
+}
+
+.numbers {
+    display: grid;
+    font-size: 2rem;
+    align-items: center;
+    text-align: center;
+    background-color: #C0C0C0;
+    border-radius: 1rem;
+    grid-template-areas: "n1 n2 n3"
+                        "n4 n5 n6"
+                        "n7 n8 n9"
+                        "n0 a b"
+                        "c d e"
+                        "f nequals nequals";
+    grid-gap: 0.3rem;
+    width: 80%;
+    margin: auto;
+    padding: 0.5rem;
+    margin-top: 2rem;
+
+}
+
+#one {
+    grid-area: n1;
+    background-color: #33FFFF;	
+}
+
+#two {
+    grid-area: n2;
+    background-color: #33FFFF;
+}
+
+#three {
+    grid-area: n3;
+    background-color: #33FFFF;
+}
+
+#four {
+    grid-area: n4;
+    background-color: #33FFFF;
+}
+
+#five {
+    grid-area: n5;
+    background-color: #33FFFF;
+}
+
+#six {
+    grid-area: n6;
+    background-color: #33FFFF;
+}
+
+#seven {
+    grid-area: n7;
+    background-color: #33FFFF;
+}
+
+#eight {
+    grid-area: n8;
+    background-color: #33FFFF;
+}
+
+#nine {
+    grid-area: n9;
+    background-color: #33FFFF;
+}
+
+#zero {
+    grid-area: n0;
+    background-color: #33FFFF;
+}
+
+#a {
+    grid-area: a;
+    background-color: #33FFFF;
+}
+
+#b {
+    grid-area: b;
+    background-color: #33FFFF;
+}
+
+#c {
+    grid-area: c;
+    background-color: #33FFFF;
+}
+
+#d {
+    grid-area: d;
+    background-color: #33FFFF;
+}
+
+#e {
+    grid-area: e;
+    background-color: #33FFFF;
+}
+
+#f {
+    grid-area: f;
+    background-color: #33FFFF;
+}
+
+
+#equal {
+    grid-area: nequals;
+    background-color: #FF0000;
+}
+
+input {
+    padding: 0.3rem;
+    font-size: 1rem;
+    width: 90%;
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 80%;
+        height: 60%;
+    }
+}
