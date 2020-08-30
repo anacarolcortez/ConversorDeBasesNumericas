@@ -142,27 +142,51 @@ zero.addEventListener('click', () => {
 })
 
 a.addEventListener('click', () => {
-    inputHexadecimal.value += 'A';
+    if (click == 3){
+        inputHexadecimal.value += 'A';
+    } else {
+        alert("Letras só podem ser inseridas no tipo hexadecimal");
+    }
 })
 
 b.addEventListener('click', () => {
-    inputHexadecimal.value += 'B';
+    if (click == 3){
+        inputHexadecimal.value += 'B';
+    } else {
+        alert("Letras só podem ser inseridas no tipo hexadecimal");
+    }
 })
 
 c.addEventListener('click', () => {
-    inputHexadecimal.value += 'C';
+    if (click == 3){
+        inputHexadecimal.value += 'C';
+    } else {
+        alert("Letras só podem ser inseridas no tipo hexadecimal");
+    }
 })
 
 d.addEventListener('click', () => {
-    inputHexadecimal.value += 'D';
+    if (click == 3){
+        inputHexadecimal.value += 'D';
+    } else {
+        alert("Letras só podem ser inseridas no tipo hexadecimal");
+    }
 })
 
 e.addEventListener('click', () => {
-    inputHexadecimal.value += 'E';
+    if (click == 3){
+        inputHexadecimal.value += 'E';
+    } else {
+        alert("Letras só podem ser inseridas no tipo hexadecimal");
+    }
 })
 
 f.addEventListener('click', () => {
-    inputHexadecimal.value += 'F';
+    if (click == 3){
+        inputHexadecimal.value += 'F';
+    } else {
+        alert("Letras só podem ser inseridas no tipo hexadecimal");
+    }
 })
 
 //Do layout, falta apenas associar o botão ao evento de tecla enter dos inputs
