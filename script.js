@@ -2,6 +2,7 @@
 const inputDecimal = document.getElementById('dec');
 const inputHexadecimal = document.getElementById('hex');
 const inputBinario = document.getElementById('bin');
+let click = 1;
 
 inputDecimal.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
@@ -64,11 +65,11 @@ function cHexadecimalBinario(numero) {
 inputBinario.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
         numero = this.value;
-        cBinario(numero);
+        cBinarioDecimal(numero);
     }
 })
 
-function cBinario(numero) {
+function cBinarioDecimal(numero) {
     const vetorDecimais = [];
     const baseDois = [];
 
@@ -89,8 +90,20 @@ function cBinario(numero) {
         return sum + next;
     });
 
-    inputDecimal.value = res;
-
+    inputDecimal.value = res;   
+    
     cDecimalHexadecimal(res);
 
 }
+
+inputDecimal.addEventListener('click', () => {
+    return click = 1;
+})
+
+inputHexadecimal.addEventListener('click', () => {
+    return click = 2;
+})
+
+inputBinario.addEventListener('click', () => {
+    return click = 3;
+})
