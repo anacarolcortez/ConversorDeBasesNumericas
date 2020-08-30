@@ -58,6 +58,12 @@ function cHexadecimalDecimal(numero) {
     const vetorNumero = numero.split('');
 
     const vNumero = vetorNumero.reverse();
+    
+    for (i = 0; i < vNumero.length; i++){
+        if (numero.match(/[a-z]/i)){
+            return alert("Digite um caracter válido");
+        }
+    }
 
     let hexa = vNumero.map(function(digito) { return digito == 'A' || digito == 'a' ? 10 : digito; })
     .map(function(digito) { return digito == 'B' || digito == 'b' ? 11 : digito; })
@@ -93,7 +99,7 @@ function cBinarioDecimal(numero) {
 
     const vetorNumero = Array.from(String(numero), Number);
 
-    vetorNumero.map(function(n) { return n == 1 || n == 0 ? n : location.reload()})
+    vetorNumero.map(function(n) { return n == 1 || n == 0 ? n : location.reload()});
 
     const vNumero = vetorNumero.reverse();
 
