@@ -64,12 +64,11 @@ function cHexadecimalBinario(numero) {
 inputBinario.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
         numero = this.value;
-        cBinarioDecimal(numero);
-        cBinarioHexadecimal(numero);
+        cBinario(numero);
     }
 })
 
-function cBinarioDecimal(numero) {
+function cBinario(numero) {
     const vetorDecimais = [];
     const baseDois = [];
 
@@ -86,12 +85,12 @@ function cBinarioDecimal(numero) {
         }
     }
 
-    inputDecimal.value  = vetorDecimais.reduce(function(sum, next){
+    const res  = vetorDecimais.reduce(function(sum, next){
         return sum + next;
     });
 
-}
+    inputDecimal.value = res;
 
-function cBinarioHexadecimal(numero) {
-    console.log(numero);
+    cDecimalHexadecimal(res);
+
 }
