@@ -142,7 +142,7 @@ zero.addEventListener('click', () => {
 })
 
 a.addEventListener('click', () => {
-    if (click == 3){
+    if (click == 2){
         inputHexadecimal.value += 'A';
     } else {
         alert("Letras só podem ser inseridas no tipo hexadecimal");
@@ -150,7 +150,7 @@ a.addEventListener('click', () => {
 })
 
 b.addEventListener('click', () => {
-    if (click == 3){
+    if (click == 2){
         inputHexadecimal.value += 'B';
     } else {
         alert("Letras só podem ser inseridas no tipo hexadecimal");
@@ -158,7 +158,7 @@ b.addEventListener('click', () => {
 })
 
 c.addEventListener('click', () => {
-    if (click == 3){
+    if (click == 2){
         inputHexadecimal.value += 'C';
     } else {
         alert("Letras só podem ser inseridas no tipo hexadecimal");
@@ -166,7 +166,7 @@ c.addEventListener('click', () => {
 })
 
 d.addEventListener('click', () => {
-    if (click == 3){
+    if (click == 2){
         inputHexadecimal.value += 'D';
     } else {
         alert("Letras só podem ser inseridas no tipo hexadecimal");
@@ -174,7 +174,7 @@ d.addEventListener('click', () => {
 })
 
 e.addEventListener('click', () => {
-    if (click == 3){
+    if (click == 2){
         inputHexadecimal.value += 'E';
     } else {
         alert("Letras só podem ser inseridas no tipo hexadecimal");
@@ -182,7 +182,7 @@ e.addEventListener('click', () => {
 })
 
 f.addEventListener('click', () => {
-    if (click == 3){
+    if (click == 2){
         inputHexadecimal.value += 'F';
     } else {
         alert("Letras só podem ser inseridas no tipo hexadecimal");
