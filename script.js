@@ -99,7 +99,7 @@ function cBinarioDecimal(numero) {
 
     const vetorNumero = Array.from(String(numero), Number);
 
-    vetorNumero.map(function(n) { return n == 1 || n == 0 ? n : location.reload()});
+    vetorNumero.map(function(n) { return n == 1 || n == 0 ? n : process.exit()})
 
     const vNumero = vetorNumero.reverse();
 
