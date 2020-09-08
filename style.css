@@ -140,6 +140,11 @@ input {
     width: 90%;
 }
 
+.btn:hover {
+  	filter: brightness(200%);
+	cursor: pointer;
+}
+
 @media (max-width: 500px) {
     .container {
         width: 80%;
