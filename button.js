@@ -189,16 +189,18 @@ f.addEventListener('click', () => {
     }
 })
 
-//Do layout, falta apenas associar o botão ao evento de tecla enter dos inputs
 equal.addEventListener('click', (event) => {
-    event.key = 13;
-    if (click == 1){
-        
-    };
-    if (click == 2){
-        inputHexadecimal.value += 0;
-    };
-    if (click == 3){
-        inputBinario.value += 0;
-    };
+    if (click == 1) {
+        numero = inputDecimal.value;
+        console.log(numero);
+        cDecimalBinario(numero);
+        cDecimalHexadecimal(numero);
+    }  else if (click == 2) {
+		numero = inputHexadecimal.value;
+        cHexadecimalDecimal(numero);
+	} else if (click == 3) {
+		numero = inputBinario.value;
+        cBinarioDecimal(numero);
+	}   
+   
 })
