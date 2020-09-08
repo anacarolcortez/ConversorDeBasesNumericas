@@ -3,7 +3,5 @@ Exercício para treinar Javascript, CSS e HTML e conversão de bases numéricas 
 <br/>
 Layout 100% responsivo (com grid, flex e media query no CSS)
 <br/>
-O que está em desenvolvimento: aplicar trigger do input no botão "=";
-<br/>
 ![Calculadora](https://github.com/anacarolcortez/ConversorDeBasesNumericas/blob/master/Calculadora.png)
 ![Calculadora_mobile](https://github.com/anacarolcortez/ConversorDeBasesNumericas/blob/master/Calculadora_mobile.png)
